@@ -13,10 +13,10 @@ function anunya(len) {
 }
 
 console.log(chalk.cyan(`${chalk.red('- - OTAKU | ANIMLOVER - -')}\nRandom Zxy\nCreated by zxagung\nFb : facebook.com/laoneisagung9\nIG : instagram.com/_zxagung\n${chalk.red('- - SANSEKAI - -')}\n`))
-console.log(`${chalk.cyan('TYPE')}\n1. Wallpaper\n2. Waifu\n3. Waifu (NSFW)\n4. neko\n5. trap\n6. blowjob\n7. asupan tiktok video\n8. meme spongbob\n9. random gambar 18\n10. random loli gif\n`)
+console.log(`${chalk.cyan('TYPE')}\n1. Wallpaper\n2. Waifu\n3. Waifu (NSFW)\n4. neko\n5. trap\n6. blowjob\n7. asupan tiktok video\n8. meme spongbob\n9. random gambar 18\n10. random loli gif\n11. pemandangan anime\n12. pemandangan animev2\n`)
 
 const type = readlineSync.questionInt(chalk.yellow("- Mau type nomor berapa?: "))
-if (type > 7) return console.log('Pilihannya cuma 1 - 7 gan')
+if (type > 7) return console.log('Pilihannya cuma 1 - 12 gan')
 
 const jml = readlineSync.questionInt(chalk.yellow("- Mau download berapa? (max 50): "))
 if (jml > 50) return console.log('Maksimal 50 gan')
@@ -161,7 +161,7 @@ try {
                             console.log(chalk.green('finished downloading!')))
                     }
                 })
-                 } else if (type == '9') {
+                } else if (type == '9') {
             axios.get(`https://apixxy.herokuapp.com/api/gambar18?apikey=premiumzx`)
                 .then(async (res) => {
                     const data = res.data.result.url
@@ -195,8 +195,42 @@ try {
                             console.log(chalk.green('finished downloading!')))
                     }
                 })
+                } else if (type == '11') {
+            axios.get(`https://apixxy.herokuapp.com/api/pemandangananime?apikey=premiumzx`)
+                .then(async (res) => {
+                    const data = res.data.result.url
+                    if (fs.existsSync('/sdcard/wp-randomzxy')) {
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    } else {
+                        fs.mkdir('/sdcard/wp-randomzxy')
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    }
+                })
+                } else if (type == '12') {
+            axios.get(`https://apixxy.herokuapp.com/api/pemandangananimev2?apikey=premiumzx`)
+                .then(async (res) => {
+                    const data = res.data.result.url
+                    if (fs.existsSync('/sdcard/wp-randomzxy')) {
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    } else {
+                        fs.mkdir('/sdcard/wp-randomzxy')
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    }
+                })
         } else {
-            console.log(chalk.red('Pilihan hanya 1 - 8'))
+            console.log(chalk.red('Pilihan hanya 1 - 12'))
         }
     }
 } catch (err) {
