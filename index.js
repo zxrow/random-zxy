@@ -12,11 +12,11 @@ function anunya(len) {
     return result.join('');
 }
 
-console.log(chalk.cyan(`${chalk.red('- - SANSEKAI - -')}\nAnime Picture\nCreated by Yusril\nFb : facebook.com/nikkixploit\n${chalk.red('- - SANSEKAI - -')}\n`))
-console.log(`${chalk.cyan('TYPE')}\n1. Wallpaper\n2. Waifu\n3. Waifu (NSFW)\n`)
+console.log(chalk.cyan(`${chalk.red('- - SANSEKAI - -')}\nAnime Picture\nCreated by zxagung\nFb : facebook.com/laoneisagung9\n${chalk.red('- - SANSEKAI - -')}\n`))
+console.log(`${chalk.cyan('TYPE')}\n1. Wallpaper\n2. Waifu\n3. Waifu (NSFW)\n4. neko\n5. trap\n6. blowjob\n`)
 
 const type = readlineSync.questionInt(chalk.yellow("- Mau type nomor berapa?: "))
-if (type > 3) return console.log('Pilihannya cuma 1 - 3 gan')
+if (type > 6) return console.log('Pilihannya cuma 1 - 6 gan')
 
 const jml = readlineSync.questionInt(chalk.yellow("- Mau download berapa gambar? (max 50): "))
 if (jml > 50) return console.log('Maksimal 50 gan')
@@ -61,6 +61,57 @@ try {
                 })
         } else if (type == '3') {
             axios.get(`https://api.waifu.pics/nsfw/waifu`)
+                .then(async (res) => {
+                    const data = res.data.url
+                    if (fs.existsSync('/sdcard/wp-anime')) {
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    } else {
+                        fs.mkdir('/sdcard/wp-anime')
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    }
+                })
+                } else if (type == '4') {
+            axios.get(`https://nekos.life/api/neko`)
+                .then(async (res) => {
+                    const data = res.data.url
+                    if (fs.existsSync('/sdcard/wp-anime')) {
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    } else {
+                        fs.mkdir('/sdcard/wp-anime')
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    }
+                })
+                } else if (type == '5') {
+            axios.get(`https://nekos.life/api/v2/img/trap`)
+                .then(async (res) => {
+                    const data = res.data.url
+                    if (fs.existsSync('/sdcard/wp-anime')) {
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    } else {
+                        fs.mkdir('/sdcard/wp-anime')
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    }
+                })
+                } else if (type == '6') {
+            axios.get(`https://nekos.life/api/v2/img/blowjob`)
                 .then(async (res) => {
                     const data = res.data.url
                     if (fs.existsSync('/sdcard/wp-anime')) {
