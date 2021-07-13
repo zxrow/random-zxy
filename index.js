@@ -16,7 +16,7 @@ console.log(chalk.cyan(`${chalk.red('- - OTAKU | ANIMLOVER - -')}\nRandom Zxy\nC
 console.log(`${chalk.cyan('TYPE')}\n1. Wallpaper\n2. Waifu\n3. Waifu (NSFW)\n4. neko\n5. trap\n6. blowjob\n7. asupan tiktok video\n8. meme spongbob\n9. random gambar 18\n10. random loli gif\n11. pemandangan anime\n12. pemandangan animev2\n`)
 
 const type = readlineSync.questionInt(chalk.yellow("- Mau type nomor berapa?: "))
-if (type > 7) return console.log('Pilihannya cuma 1 - 12 gan')
+if (type > 12) return console.log('Pilihannya cuma 1 - 12 gan')
 
 const jml = readlineSync.questionInt(chalk.yellow("- Mau download berapa? (max 50): "))
 if (jml > 50) return console.log('Maksimal 50 gan')
