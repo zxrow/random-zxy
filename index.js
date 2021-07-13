@@ -18,12 +18,12 @@ console.log(`${chalk.cyan('TYPE')}\n1. Wallpaper\n2. Waifu\n3. Waifu (NSFW)\n4. 
 const type = readlineSync.questionInt(chalk.yellow("- Mau type nomor berapa?: "))
 if (type > 7) return console.log('Pilihannya cuma 1 - 7 gan')
 
-const jml = readlineSync.questionInt(chalk.yellow("- Mau download berapa gambar? (max 50): "))
+const jml = readlineSync.questionInt(chalk.yellow("- Mau download berapa? (max 50): "))
 if (jml > 50) return console.log('Maksimal 50 gan')
 
 
 try {
-    console.log(chalk.yellow('\nLagi proses download...\nNanti letak gambarnya ada di folder "wp-anime"'))
+    console.log(chalk.yellow('\nLagi proses download...\nNanti letak  ada di folder "wp-randomzxy"'))
     for (let i = 0; i < jml; i++) {
         if (type == '1') {
             axios.get(`https://nekos.life/api/v2/img/wallpaper`)
@@ -134,18 +134,18 @@ try {
                     if (fs.existsSync('/sdcard/wp-randomzxy')) {
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.mp4`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     } else {
                         fs.mkdir('/sdcard/wp-randomzxy')
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.mp4`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     }
                 })
         } else {
-            console.log(chalk.red('Pilihan hanya 1 - 3'))
+            console.log(chalk.red('Pilihan hanya 1 - 7'))
         }
     }
 } catch (err) {
