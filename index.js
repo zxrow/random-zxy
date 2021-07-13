@@ -12,7 +12,7 @@ function anunya(len) {
     return result.join('');
 }
 
-console.log(chalk.cyan(`${chalk.red('- - SANSEKAI - -')}\nAnime Picture\nCreated by zxagung\nFb : facebook.com/laoneisagung9\n${chalk.red('- - SANSEKAI - -')}\n`))
+console.log(chalk.cyan(`${chalk.red('- - SANSEKAI - -')}\nRandom Zxy\nCreated by zxagung\nFb : facebook.com/laoneisagung9\nIG : instagram.com/_zxagung\n${chalk.red('- - SANSEKAI - -')}\n`))
 console.log(`${chalk.cyan('TYPE')}\n1. Wallpaper\n2. Waifu\n3. Waifu (NSFW)\n4. neko\n5. trap\n6. blowjob\n7. random tiktok video\n`)
 
 const type = readlineSync.questionInt(chalk.yellow("- Mau type nomor berapa?: "))
