@@ -13,8 +13,11 @@ random zxy
 > cd random-zxy
 > npm install
 ```
+
+##Support
 ```ZxAgung
-<blockquote>Jangan di salah Gunakan Woowwk</blockquote>
+>Jangan di salah Gunakan Woowwk
+>support terus github ini Dan Jangan Lupa Follow Hehe
 ```
 
 ### Run
