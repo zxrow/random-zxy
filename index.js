@@ -13,10 +13,10 @@ function anunya(len) {
 }
 
 console.log(chalk.cyan(`${chalk.red('- - SANSEKAI - -')}\nAnime Picture\nCreated by zxagung\nFb : facebook.com/laoneisagung9\n${chalk.red('- - SANSEKAI - -')}\n`))
-console.log(`${chalk.cyan('TYPE')}\n1. Wallpaper\n2. Waifu\n3. Waifu (NSFW)\n4. neko\n5. trap\n6. blowjob\n`)
+console.log(`${chalk.cyan('TYPE')}\n1. Wallpaper\n2. Waifu\n3. Waifu (NSFW)\n4. neko\n5. trap\n6. blowjob\n7. random tiktok video\n`)
 
 const type = readlineSync.questionInt(chalk.yellow("- Mau type nomor berapa?: "))
-if (type > 6) return console.log('Pilihannya cuma 1 - 6 gan')
+if (type > 7) return console.log('Pilihannya cuma 1 - 7 gan')
 
 const jml = readlineSync.questionInt(chalk.yellow("- Mau download berapa gambar? (max 50): "))
 if (jml > 50) return console.log('Maksimal 50 gan')
@@ -29,16 +29,16 @@ try {
             axios.get(`https://nekos.life/api/v2/img/wallpaper`)
                 .then(async (res) => {
                     const data = res.data.url
-                    if (fs.existsSync('/sdcard/wp-anime')) {
+                    if (fs.existsSync('/sdcard/wp-randomzxy')) {
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     } else {
-                        fs.mkdir('/sdcard/wp-anime')
+                        fs.mkdir('/sdcard/wp-randomzxy')
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     }
                 })
@@ -46,16 +46,16 @@ try {
             axios.get(`https://api.waifu.pics/sfw/waifu`)
                 .then(async (res) => {
                     const data = res.data.url
-                    if (fs.existsSync('/sdcard/wp-anime')) {
+                    if (fs.existsSync('/sdcard/wp-randomzxy')) {
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     } else {
-                        fs.mkdir('/sdcard/wp-anime')
+                        fs.mkdir('/sdcard/wp-randomzxy')
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     }
                 })
@@ -63,16 +63,16 @@ try {
             axios.get(`https://api.waifu.pics/nsfw/waifu`)
                 .then(async (res) => {
                     const data = res.data.url
-                    if (fs.existsSync('/sdcard/wp-anime')) {
+                    if (fs.existsSync('/sdcard/wp-randomzxy')) {
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     } else {
-                        fs.mkdir('/sdcard/wp-anime')
+                        fs.mkdir('/sdcard/wp-randomzxy')
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     }
                 })
@@ -80,16 +80,16 @@ try {
             axios.get(`https://nekos.life/api/neko`)
                 .then(async (res) => {
                     const data = res.data.url
-                    if (fs.existsSync('/sdcard/wp-anime')) {
+                    if (fs.existsSync('/sdcard/wp-randomzxy')) {
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     } else {
-                        fs.mkdir('/sdcard/wp-anime')
+                        fs.mkdir('/sdcard/wp-randomzxy')
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     }
                 })
@@ -97,16 +97,16 @@ try {
             axios.get(`https://nekos.life/api/v2/img/trap`)
                 .then(async (res) => {
                     const data = res.data.url
-                    if (fs.existsSync('/sdcard/wp-anime')) {
+                    if (fs.existsSync('/sdcard/wp-randomzxy')) {
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     } else {
-                        fs.mkdir('/sdcard/wp-anime')
+                        fs.mkdir('/sdcard/wp-randomzxy')
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     }
                 })
@@ -114,16 +114,33 @@ try {
             axios.get(`https://nekos.life/api/v2/img/blowjob`)
                 .then(async (res) => {
                     const data = res.data.url
-                    if (fs.existsSync('/sdcard/wp-anime')) {
+                    if (fs.existsSync('/sdcard/wp-randomzxy')) {
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     } else {
-                        fs.mkdir('/sdcard/wp-anime')
+                        fs.mkdir('/sdcard/wp-randomzxy')
                         const response = await fetch(data);
                         const buffer = await response.buffer();
-                        fs.writeFile(`/sdcard/wp-anime/${anunya(5)}.jpg`, buffer, () =>
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    }
+                })
+                } else if (type == '7') {
+            axios.get(`https://apixxy.herokuapp.com/api/asupan/tiktok?apikey=premiumzx`)
+                .then(async (res) => {
+                    const data = res.data.result.url
+                    if (fs.existsSync('/sdcard/wp-randomzxy')) {
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
+                            console.log(chalk.green('finished downloading!')))
+                    } else {
+                        fs.mkdir('/sdcard/wp-randomzxy')
+                        const response = await fetch(data);
+                        const buffer = await response.buffer();
+                        fs.writeFile(`/sdcard/wp-randomzxy/${anunya(5)}.jpg`, buffer, () =>
                             console.log(chalk.green('finished downloading!')))
                     }
                 })
