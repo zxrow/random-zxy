@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/shansekai/anime-picture/main/20210621_120358.jpg" width="300" height="300"/>
+<img src="https://raw.githubusercontent.com/z-zxq/anime-picture/main/Screenshot_20210713_165950.JPG" width="300" height="300"/>
 <br>
 Anime Picture
 </p>
