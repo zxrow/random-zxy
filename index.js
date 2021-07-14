@@ -18,7 +18,7 @@ console.log(`${chalk.cyan('TYPE')}\n1. Wallpaper\n2. Waifu\n3. Waifu (NSFW)\n4. 
 const type = readlineSync.questionInt(chalk.yellow("- Mau type nomor berapa?: "))
 if (type > 13) return console.log('Pilihannya cuma 1 - 13 gan')
 
-const jml = readlineSync.questionInt(chalk.yellow("- Mau download berapa? (max 50): "))
+const jml = readlineSync.questionInt(chalk.yellow("- Mau download berapa? (max 10): "))
 if (jml > 10) return console.log('Maksimal 10 gan')
 
 
