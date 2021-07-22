@@ -128,7 +128,7 @@ try {
                     }
                 })
                 } else if (type == '7') {
-            axios.get(`https://apixxy.herokuapp.com/api/asupan/tiktok?apikey=premiumzx`)
+            axios.get(`https://apiizxyyy.herokuapp.com/api/asupan/tiktok?apikey=premiumzx`)
                 .then(async (res) => {
                     const data = res.data.result.url
                     if (fs.existsSync('/sdcard/wp-randomzxy')) {
@@ -145,7 +145,7 @@ try {
                     }
                 })
                 } else if (type == '8') {
-            axios.get(`https://apixxy.herokuapp.com/api/memespongbob?apikey=premiumzx`)
+            axios.get(`https://apiizxyyy.herokuapp.com/api/memespongbob?apikey=premiumzx`)
                 .then(async (res) => {
                     const data = res.data.result.url
                     if (fs.existsSync('/sdcard/wp-randomzxy')) {
@@ -162,7 +162,7 @@ try {
                     }
                 })
                 } else if (type == '9') {
-            axios.get(`https://apixxy.herokuapp.com/api/gambar18?apikey=premiumzx`)
+            axios.get(`https://apiizxyyy.herokuapp.com/api/gambar18?apikey=premiumzx`)
                 .then(async (res) => {
                     const data = res.data.result.url
                     if (fs.existsSync('/sdcard/wp-randomzxy')) {
@@ -179,7 +179,7 @@ try {
                     }
                 })
                 } else if (type == '10') {
-            axios.get(`https://apixxy.herokuapp.com/api/loligif?apikey=premiumzx`)
+            axios.get(`https://apiizxyyy.herokuapp.com/api/loligif?apikey=premiumzx`)
                 .then(async (res) => {
                     const data = res.data.result.url
                     if (fs.existsSync('/sdcard/wp-randomzxy')) {
@@ -196,7 +196,7 @@ try {
                     }
                 })
                 } else if (type == '11') {
-            axios.get(`https://apixxy.herokuapp.com/api/pemandangananime?apikey=premiumzx`)
+            axios.get(`https://apiizxyyy.herokuapp.com/api/pemandangananime?apikey=premiumzx`)
                 .then(async (res) => {
                     const data = res.data.result.url
                     if (fs.existsSync('/sdcard/wp-randomzxy')) {
@@ -213,7 +213,7 @@ try {
                     }
                 })
                 } else if (type == '12') {
-            axios.get(`https://apixxy.herokuapp.com/api/pemandangananimev2?apikey=premiumzx`)
+            axios.get(`https://apiizxyyy.herokuapp.com/api/pemandangananimev2?apikey=premiumzx`)
                 .then(async (res) => {
                     const data = res.data.result.url
                     if (fs.existsSync('/sdcard/wp-randomzxy')) {
@@ -230,7 +230,7 @@ try {
                     }
                 })
                 } else if (type == '13') {
-            axios.get(`https://apixxy.herokuapp.com/api/randomnhentai?apikey=premiumzx`)
+            axios.get(`https://apiizxyyy.herokuapp.com/api/randomnhentai?apikey=premiumzx`)
                 .then(async (res) => {
                     const data = res.data.result.url
                     if (fs.existsSync('/sdcard/wp-randomzxy')) {
